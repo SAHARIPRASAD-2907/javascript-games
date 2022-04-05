@@ -4,9 +4,7 @@ const { response } = require("express");
 
 const app = express();
 
-app.listen(3000, () => {
-  console.log("server is up on port 3000");
-});
+const PORT = process.env.PORT || 8000;
 
 // Define paths for express configs
 const publicDirectoryPath = path.join(__dirname, "/public");
@@ -29,6 +27,6 @@ app.get("/quiz", (req, res) => {
   res.render("quiz-app");
 });
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
   console.log("server is up on port 8000");
 });
