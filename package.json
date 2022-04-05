@@ -1,7 +1,13 @@
 {
   "name": "javascript-games",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
+  "engines": {
+    "node": "16.14.0"
+  },
+  "scripts": {
+    "start":"node server.js"
+  },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
