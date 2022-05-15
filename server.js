@@ -24,7 +24,12 @@ app.get("/", (req, res) => {
 
 // Quiz App
 app.get("/quiz", (req, res) => {
-  res.render("quiz-app");
+  res.render("quiz");
+});
+
+// wordly App
+app.get("/wordle", (req, res) => {
+  res.render("wordle");
 });
 
 app.listen(PORT, () => {
